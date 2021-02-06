@@ -1,0 +1,25 @@
+<h1> Employee Details</h1>
+
+<table>
+  <th>
+    employee id
+  </th>&nbsp;&nbsp;&nbsp;
+  <th>
+    employee name
+  </th>&nbsp;&nbsp;&nbsp;
+  <th>
+    employee salary
+  </th>&nbsp;&nbsp;&nbsp;
+  <tr *ngFor="let emp of employees">
+    <td>
+      {{ emp.eid}}
+    </td>&nbsp;&nbsp;&nbsp;
+    <td>
+      {{ emp.ename}}
+    </td>&nbsp;&nbsp;&nbsp;
+    <td>
+      {{ emp.sal}}
+    </td>
+  </tr>
+</table>
+<h3>the employee "{{min.ename}}" has least salary "{{min.sal}}"</h3>
