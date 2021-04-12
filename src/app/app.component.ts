@@ -26,4 +26,9 @@ export class AppComponent {
    console.log(this.min);
   }  
   
+   this.max = this.employees.reduce(function(old, item) {
+      return (old.sal > item.sal) ? old : item
+      }) 
+   console.log(this.max);
+  
 }
